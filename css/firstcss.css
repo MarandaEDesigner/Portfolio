@@ -1,0 +1,10 @@
+
+.card {
+  background-color: pink ;
+  border: 8px;
+  border-radius: 90px;
+  box-shadow:  20px 30px 70px rgba(23, 0, 9, 0.4) ;
+  margin: 24px;
+  margin-bottom: 500px;
+  padding: 36px;
+}
