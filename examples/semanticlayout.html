@@ -1,0 +1,62 @@
+.<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Semantic Layout Example</title>
+    <style>
+      body {
+        text-align: center;
+      }
+
+      #header {
+        background: red;
+      }
+
+      #nav {
+        background: orange;
+      }
+
+       #article{
+         background: green;
+         display: inline-block;
+         padding: 24px;
+         width: 52%;
+
+       }
+
+       section{
+         background: lightgreen;
+       }
+
+       #sidebar{
+         background: skyblue;
+         display: inline-block;
+         width: 39%;
+       }
+
+
+      #footer {
+        background: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="Header">HEADER</header>
+    <nav id="nav">NAVIGATION BAR</nav>
+    <main id="main">
+      <article id="article">
+        <h1>Puppies are adorable, here's why</h1>
+        <section>
+          <h2>Reason 1: Puppies have the puppy eyes
+          </h2>
+          <h3> Puppies whimper in a soft way
+        </section>
+        <section>SECTION 2
+          <h2>Reason 2: Puppies love to lick you for affection</h2>
+        </section>
+      </article>
+      <aside id="sidebar">SIDEBAR</aside>
+    </main>
+    <footer id="footer">FOOTER</<footer>
+  </body>
+</html>
