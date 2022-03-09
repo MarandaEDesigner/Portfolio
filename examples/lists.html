@@ -1,0 +1,72 @@
+.<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>List Examples</title>
+    <style>
+      #Fruitsbasket {
+        List-style-type: kannada;
+      }
+
+      #Fruitsbasket li {
+        color: lightblue;
+      }
+
+      #Fruitsbasket li:first-child {
+        color: tan;
+      }
+
+      #Fruitsbasket li:nth-child(3) {
+        color: green;
+      }
+
+      #myNavBar ul {
+        background: linear-gradient(to right, indigo, lightblue);
+        list-style-type: none;
+        padding-inline-start: 0px;
+      }
+
+      #myNavBar ul li {
+        display: inline-block;
+        padding: 12px 24px;
+
+      }
+
+      #myNavBar ul li:active {
+        background: linear-gradient(to left, yellow, orange);
+
+      }
+
+      #cta {
+        float: right;
+      }
+
+
+    </style>
+  </head>
+  <body>
+  <nav id="mynavbar">
+    <ul>
+      <li>Home</li>
+      <li>Gallery</li>
+      <li>About Me</li>
+      <li id="cta">Sign Up</li>
+    </ul>
+  </nav>
+
+
+
+    <ol>
+      <li>Mercury</li>
+      <li>Venus</li>
+      <li>Earth</li>
+    </ol>
+
+    <ul id="fruitsbasket">
+      <li>Basket</li>
+      <li>Wave</li>
+      <li>Snake</li>
+    </ul>
+
+  </body>
+</html>
