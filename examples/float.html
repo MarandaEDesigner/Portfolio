@@ -1,35 +1,36 @@
-.<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<!DOCTYPE html>
+<html lang="en-US">
   <head>
-    <meta charset="utf-8">
-    <title></title>
+    <title>Float and Clear Examples</title>
     <style>
-     #floatleft {
-       background: skyblue;
-       display: inline-block;
-       float: left;
-       margin: 8px;
-     }
+      #floatLeft {
+        background: skyblue;
+        display: inline-block;
+        float: left;
+        margin: 8px;
+      }
 
-     #floatright {
-       background: red;
-       display: inline-block;
-       float: left;
-       margin: 8px;
-     }
+      #floatRight {
+        background: red;
+        display: inline-block;
+        float: right;
+        margin: 8px;
+      }
 
-     #clear {
-       clear: both;
-     }
-
+      #clear {
+        clear: both;
+      }
     </style>
   </head>
   <body>
-    <div id="floatleft">This text is floated left</div>
-    <div id="floatright">This text is floated right</div>
+    <div id="floatLeft">This text is floated left</div>
+    <div id="floatRight">This text is floated right</div>
+    <div id="floatLeft">More floated text</div>
+    <div id="floatLeft">More floated text</div>
+    <div id="floatLeft">More floated text</div>
     <div id="clear">This text will clear the floats</div>
-    <div id="floatright">This text is floated right</div>
-    <div id="floatleft">This text is floated left</div>
-
+    <div id="floatLeft">More floated text</div>
+    <div id="floatLeft">More floated text</div>
+    <div id="floatLeft">More floated text</div>
   </body>
 </html>
