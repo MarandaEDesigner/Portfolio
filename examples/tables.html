@@ -1,0 +1,156 @@
+.<!DOCTYPE html>
+<html lang="-US" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+     #MemeTable,
+     #MemeTable caption,
+     #MemeTable th,
+     #MemeTable td {
+       border: 3px solid black;
+       border-collapse: collapse;
+       padding: 12px;
+     }
+
+     #MemeTable {
+       margin-bottom: 48px;
+     }
+
+     /* collapse removes the borders around the td*/
+
+     #PrettyTable {
+       border-collapse: collapse;
+     }
+
+     #PrettyTable th {
+       padding-bottom: 12px;
+       padding-right: 24px;
+     }
+
+     #PrettyTable td {
+       padding: 4px 0;
+     }
+     #PrettyTable tr:nth-child(even) {
+       background-color: lightgrey
+     }
+
+     #John{
+       background-color: lightblue;
+     }
+
+     #PrettyTable tr:hover {
+       background-color: black;
+     }
+     #MemeTableCol {
+       background-color: purple;
+     }
+
+     #header {
+     background-color: lightblue;
+     }
+
+
+
+
+    </style>
+
+  </head>
+  <body>
+    <table id="MemeTable">
+      <caption>This is Meme Table</caption>
+      <colgroup>
+        <col id="MemeTableCol" span="2">
+        <!--Span is to color the tables (depends on number)--!>
+        <col>
+        <col>
+        <col>
+      </colgroup>
+      <thead>
+        <tr id="header">
+          <th>First name</th>
+          <th>Last name</th>
+          <th>Fav animal</th>
+          <th>fav food</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Johnny</td>
+          <td>Falcon</td>
+          <td>Horse</td>
+          <td>Cake</td>
+        </tr>
+        <tr>
+          <td>Rohnny</td>
+          <td>King</td>
+          <td>Cat</td>
+          <td>Apple</td>
+        </tr>
+        <tr>
+          <td>Derick</td>
+          <td>Patterson</td>
+          <td>Turtle</td>
+          <td>Lasagna</td>
+        </tr>
+        <tr>
+          <td>PICKLE RICK</td>
+          <td>Rick</td>
+          <td>PICKLE</td>
+          <td>PIICKLLEEE</td>
+        </tr>
+
+
+      </tbody>
+
+
+    </table>
+
+
+
+
+
+
+    <table id="PrettyTable">
+      <thead>
+        <tr>
+          <th>First name</th>
+          <th>Last name</th>
+          <th>Fav animal</th>
+          <th>fav food</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td id="John">Johnny</td>
+          <td>Falcon</td>
+          <td>Horse</td>
+          <td>Cake</td>
+        </tr>
+        <tr>
+          <td>Rohnny</td>
+          <td>King</td>
+          <td>Cat</td>
+          <td>Apple</td>
+        </tr>
+        <tr>
+          <td>Derick</td>
+          <td>Patterson</td>
+          <td>Turtle</td>
+          <td>Lasagna</td>
+        </tr>
+        <tr>
+          <td>PICKLE RICK</td>
+          <td>Rick</td>
+          <td>PICKLE</td>
+          <td>PIICKLLEEE</td>
+        </tr>
+
+
+      </tbody>
+
+
+    </table>
+
+  </body>
+</html>
