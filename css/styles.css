@@ -89,3 +89,76 @@ nav a::before {
 nav a:hover::before {
   width: 100%;
 }
+
+
+
+
+
+
+
+/* NOTE: This is the footer coding */
+
+.footer {
+  background-color: #02171C;
+  height: 120px;
+
+}
+
+a.menu {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: /* OPTIMIZE:  */;
+}
+
+.footer-text-right {
+  font-size:20px;
+  padding-right:40px;
+  float:right;
+  word-spacing:20px;
+}
+
+a.menu:hover {
+  background-color:
+  font-size:20px;
+  text-decoration: none;
+}
+
+a.menu::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: white;
+  outline-style:double;
+  outline-color: white;
+
+
+  position: /* OPTIMIZE:  */;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+a.menu:hover::before {
+  width: 100%;
+}
+a.menu {
+  text-decoration: none;
+  color: white;
+}
+
+
+.footer-content-left {
+  padding-left:40px;
+  margin-top:0px;
+
+}
+
+.icon-style {
+  height:70px;
+  margin-left:20px;
+  margin-top:0px;
+  float:inherit;
+}
