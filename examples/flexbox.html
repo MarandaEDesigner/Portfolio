@@ -1,0 +1,61 @@
+.<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      body {
+          font-family: Verdana;
+        }
+        h2:not(:first-child) {
+          padding-top: 72px;
+        }
+        .flexChild {
+          background-color: lavender;
+          border: 2px solid grey;
+          border-radius: 4px;
+          box-sizing: border-box;
+          font-size: 24px;
+          font-weight: bold;
+          height: 50px;
+          margin: 10px;
+          padding: 8px 14px;
+          width: 50px;
+        }
+        .flexChildWide {
+          text-align: center;
+          width: 300px;
+        }
+        .flexChildTall {
+          height: 100px;
+          padding-top: 50px;
+        }
+        .flexChildGiant {
+          height: 200px;
+          padding-top: 100px;
+        }
+        .flexContainer {
+          background-color: darksalmon;
+          border-radius: 4px;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: flex-end;
+          /* NOTE: flex-end, center, flex-start, space-between
+          space-evenly */
+          align-items: center;
+        }
+        /* NOTE: for flex direct- row, column and row-reverse */
+      </style>
+  </head>
+  <body>
+    <div>
+   <div class="flexContainer">
+     <div class="flexChild flexChildGiant flexChildWide">A</div>
+     <div class="flexChild flexChildWide">B</div>
+     <div class="flexChild flexChildTall">C</div>
+     <div class="flexChild flexChildWide">D</div>
+   </div>
+
+  </body>
+</html>

@@ -1,0 +1,78 @@
+.<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>media queries</title>
+    <style>
+      @media screen and (min width: 800px) {
+        #header {
+          font-size: 36px;
+        }
+      }
+      #largeScreen {
+        background-color: red;
+        color: white;
+      }
+      #mediumscreen,
+      #smallScreen {
+        background-color: grey;
+        color: grey;
+      }
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 799px) {
+      #header {
+        font-size: 24px;
+      }
+    #mediumScreen {
+      background-color: darkgreen;
+      color: white;
+    }
+    #largeScreen,
+    #smallScreen {
+      background-color: grey;
+      color: grey;
+    }
+  }
+
+   @media screen and (max-width: 479px) {
+     #header {
+       font-size: 16px;
+     }
+     #smallScreen {
+       background-color: blue;
+     }
+     #largeScreen,
+     #mediumScreen {
+       background-color: grey;
+       color: grey;
+     }
+     #footer {
+       display: none;
+     }
+   }
+
+   #header {
+     background-color: skyblue;
+     padding: 12px 48px;
+   }
+   #smallScreen,
+   #mediumScreen,
+   #largeScreen {
+     padding: 48px;
+   }
+   #footer {
+     background-color: lavender;
+     padding: 12px 48px;
+   }
+
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <h1>HEADER</h1>
+    </div>
+    <div id="largeScreen">
+
+  </body>
+</html>

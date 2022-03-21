@@ -101,7 +101,6 @@ nav a:hover::before {
 .footer {
   background-color: #02171C;
   height: 120px;
-
 }
 
 a.menu {
@@ -114,7 +113,7 @@ a.menu {
 
 .footer-text-right {
   font-size:20px;
-  padding-right:40px;
+  padding-right:90.9px;
   float:right;
   word-spacing:20px;
 }
@@ -153,7 +152,6 @@ a.menu {
 .footer-content-left {
   padding-left:40px;
   margin-top:0px;
-
 }
 
 .icon-style {
