@@ -1,0 +1,58 @@
+.<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>flexitem</title>
+    <style>
+      .flexchild {
+        background-color: lavender;
+        border: 2px solid grey;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 24px;
+        font-weight: bold;
+        margin: 10px;
+        padding: 8px 14px;
+        text-align: center;
+      }
+      .container {
+        background-color: darksalmon;
+        border-radius: 4px;
+        display: flex;
+      }
+      .flexwrap {
+        flex-wrap: wrap;
+      }
+      .flexchildorder1 {
+        order: 1;
+      }
+      .flexchildorder2 {
+        order: 2;
+      }
+      .flexchildflex1 {
+        flex: 1;
+      }
+      .flexchildflex3 {
+        flex: 3;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div class="container flexwrap">
+      <div class="flexchild flexchildflex3">3</div>
+      <div class="flexchild flexchildflex3">3</div>
+      <div class="flexchild flexchildflex3">3</div>
+      <div class="flexchild flexchildflex3">3</div>
+    </div>
+
+    <div class="container flexwrap">
+      <div class="flexchild flexchildflex1">1</div>
+      <div class="flexchild flexchildflex3">3</div>
+      <div class="flexchild flexchildflex1">1</div>
+      <div class="flexchild flexchildflex1">1</div>
+    </div>
+
+  </body>
+</html>
