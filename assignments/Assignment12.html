@@ -51,38 +51,41 @@
       /* your CSS for tablet goes in here */
       @media screen and (min-width: 480px) and (max-width: 799px) {
       .fakeLink:nth-child(4n){
-        height: 100px;
-        align-items: center;
-        padding-top: 50px;
-        display: flex;
-        flex-direction: column;
+
+
       }
       .fakeLink2 {
         height: 130px;
-        padding-top: 20px;
-        align-items: center;
-        flex-direction: column;
-        display: flex;
-        justify-content: center;
       }
 
+      aside {
 
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+      }
       }
 
       /* your CSS for desktop goes in here */
       @media screen and (min-width: 800px) {
+        .fakeLink:nth-child(4n){
+          height: 2px;
+        }
         .fakeLink2 {
           height: 130px;
-          padding-top: 0px;
-          align-items: center;
-          flex-direction: row;
-          display: flex;
-          justify-content: center;
-          flex-wrap: wrap-reverse;
+        }
+        .fakeLink{
+          height: 50px;
 
         }
+        nav {
+          flex-direction: row;
 
-
+        }
+        aside {
+          flex-direction: row;
+        }
       }
     </style>
   </head>
