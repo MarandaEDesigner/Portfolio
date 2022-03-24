@@ -1,0 +1,99 @@
+.<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>assignment13</title>
+    <style>
+      body {
+        background-color: #13293E;
+      }
+
+
+      .Header {
+        background-color: #D8872B;
+        grid-area: Header;
+        grid-column: 1 / 4;
+        grid-row: 1;
+        padding: 36px;
+
+      }
+      .sidenav {
+        background-color: #9E410D;
+        grid-area: sidenav;
+        grid-column: 1;
+        height: 560px;
+        padding: 36px;
+        grid-row: 2;
+
+
+
+      }
+      .content {
+        background-color: #F2E5AA;
+        grid-area: content;
+        padding: 36px;
+        grid-column: 2 / 4;
+        grid-row: 2;
+
+
+      }
+
+      .content2 {
+        background-color: #E5A300;
+        grid-area: content2;
+        padding: 36px;
+        height: 1px;
+        grid-column: 2 / 6;
+        grid-row: 2 / 4
+
+
+
+      }
+
+      .footer {
+        background-color: #7E2A00;
+        grid-area: footer;
+        padding: 12px 48px;
+
+      }
+
+      .myGrid {
+        display: grid;
+        grid-template-columns: repeat(3, fr);
+        grid-auto-rows: minmax(50px, auto);
+        gap: 0px 0px ;
+        grid-template-areas:
+          "Header Header Header"
+          "sidenav sidenav sidenav"
+          "content2 content2 content2"
+          "footer footer footer"
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="myGrid">
+      <div class="Header"><h1> NARUTO IS A TERRIBLE NINJA</<h1></div>
+      <div class="sidenav">
+        <nav>
+          <a href="Homepage">Homepage</a>
+          <a href="About">About</a>
+          <a href="Naruto Shippuden">Naruto</a>
+        </nav>
+      </div>
+      <div class="content">Naruto is  terrible ninja
+
+      <img src="../images/naruto.gif" alt="naruto">
+      He thinks he can get away with calling Tsundane grandma, THE DISREPSPECT.
+      If he ever thought he could become a hokage I would throw him in the dumpster, right
+      where be BELONGS!
+
+      </div>
+       <div class="content2">
+         <b>NARUTO WILL FOREVER BE TERRIBLE AND ANNOYING.</b>
+      </div>
+      <div class="footer">@NARUTOSHIPPUDEN</div>
+    </div>
+
+  </body>
+</html>
