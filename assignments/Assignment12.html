@@ -56,6 +56,11 @@
       }
       .fakeLink2 {
         height: 130px;
+        width: 40%;
+        flex-grow: 40;
+
+
+
       }
 
       aside {
@@ -63,29 +68,51 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+        display: flex;
 
       }
       }
 
       /* your CSS for desktop goes in here */
       @media screen and (min-width: 800px) {
-        .fakeLink:nth-child(4n){
+        /* NOTE: order, flex grow, flex strength, flex shorthand */
+
+        nav.fakeLink:nth-child(4n){
+          flex-grow: 80;
           height: 2px;
+          width: 90%;
         }
         .fakeLink2 {
           height: 130px;
+          width: 40%;
+          flex: 90;
+
+
         }
         .fakeLink{
           height: 50px;
+          flex: 90;
 
         }
         nav {
           flex-direction: row;
+          justify-content: center;
+
+          display: flex;
+
+
+
+
 
         }
         aside {
           flex-direction: row;
+          display: flex;
+
+
         }
+
+
       }
     </style>
   </head>
