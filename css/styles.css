@@ -3,53 +3,42 @@
 body {
   margin: 0 ;
   background-image: url("../images/BG.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment:  fixed;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-
-
-
-
 }
 .card {
   background-color: #02171C;
   border-radius: 200px;
   border: #02171C;
-
 }
-
 .container {
   width: 80%;
   margin: 0 auto;
 }
-
 header {
   background: #DFDDD7;
 }
-
-
 header::after {
   content: '';
   display: table;
   clear: both;
 }
-
 .logo {
   float: left;
   padding: 5px 0;
-
-
 }
 
 nav {
   float: right;
 }
-
 nav ul {
   margin: 1.9px;
   padding: 0;
   list-style: none;
 }
-
 nav li {
   display: inline-block;
   margin-left: 70px;
@@ -57,19 +46,15 @@ nav li {
 
   position: /* OPTIMIZE:  */;
 }
-
 nav a {
   color: #02171C;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 20px;
 }
-
 nav a:hover {
   color: #02171C;
 }
-
-
 nav a::before {
   content: '';
   display: block;
@@ -77,25 +62,15 @@ nav a::before {
   background-color: #02171C;
   outline-style:double;
   outline-color: #02171C;
-
-
   position: /* OPTIMIZE:  */;
   top: 0;
   width: 0%;
 
   transition: all ease-in-out 250ms;
 }
-
 nav a:hover::before {
   width: 100%;
 }
-
-
-
-
-
-
-
 /* NOTE: This is the footer coding */
 
 .footer {
@@ -107,23 +82,19 @@ a.menu {
   display: inline-block;
   margin-left: 70px;
   padding-top: 23px;
-
   position: /* OPTIMIZE:  */;
 }
-
 .footer-text-right {
   font-size:20px;
   padding-right:90.9px;
   float:right;
   word-spacing:20px;
 }
-
 a.menu:hover {
   background-color:
   font-size:20px;
   text-decoration: none;
 }
-
 a.menu::before {
   content: '';
   display: block;
@@ -131,15 +102,11 @@ a.menu::before {
   background-color: white;
   outline-style:double;
   outline-color: white;
-
-
   position: /* OPTIMIZE:  */;
   top: 0;
   width: 0%;
-
   transition: all ease-in-out 250ms;
 }
-
 a.menu:hover::before {
   width: 100%;
 }
@@ -147,16 +114,14 @@ a.menu {
   text-decoration: none;
   color: white;
 }
-
-
 .footer-content-left {
   padding-left:40px;
   margin-top:0px;
 }
-
 .icon-style {
   height:70px;
   margin-left:20px;
-  margin-top:0px;
-  float:inherit;
+  margin-top: 0px;
+  float: inherit;
+  padding-top: 20px;
 }
