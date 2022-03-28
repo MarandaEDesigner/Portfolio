@@ -58,8 +58,7 @@
         height: 130px;
         width: 40%;
         flex-grow: 40;
-
-
+        padding: 50px;
 
       }
 
@@ -77,15 +76,16 @@
       @media screen and (min-width: 800px) {
         /* NOTE: order, flex grow, flex strength, flex shorthand */
 
-        nav.fakeLink:nth-child(4n){
+        aside .fakeLink:first-child {
           flex-grow: 80;
-          height: 2px;
           width: 90%;
+
         }
         .fakeLink2 {
           height: 130px;
           width: 40%;
           flex: 90;
+          padding: 50px;
 
 
         }
@@ -93,12 +93,13 @@
           height: 50px;
           flex: 90;
 
+
         }
         nav {
           flex-direction: row;
           justify-content: center;
 
-          display: flex;
+          display: flex; 
 
 
 
@@ -108,6 +109,8 @@
         aside {
           flex-direction: row;
           display: flex;
+
+
 
 
         }
