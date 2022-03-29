@@ -1,0 +1,66 @@
+.<!DOCTYPE html>
+<html lang="EN-US" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Transitions</title>
+    <style>
+     #trans1 {
+       transition: color 1s;
+     }
+     #trans1:hover {
+       color: red;
+     }
+
+     #trans2 {
+       transition-property: transform;
+       transition-duration: 2s;
+       transition-timing-function: ease;
+       transition-delay: 0s;
+       /* NOTE: ease, ease-in, ease-out, linear */
+     }
+
+     #trans2:hover {
+       transform: scale(3);
+     }
+
+     #box {
+       box-sizing: border-box;
+       height: 200px;
+       width: 200px;
+       background-color: lightblue;
+       transition:
+         border-radius 2s ease-in,
+         background-color 2s;
+     }
+     #box:hover {
+       background-color: purple;
+       border-radius: 50%;
+     }
+
+     #horse {
+       height: 400px;
+       transition: transform 1s, opacity 2s;
+     }
+
+     #horse:hover{
+       transform: scale(0.5) rotate(180deg) translateY(200px);
+       opacity: 0;
+     }
+
+
+    </style>
+  </head>
+  <body>
+    <h1 id="trans1">
+      This is a basic transition.
+    </h1>
+    <h2 id="trans2">
+      This is another transition.
+    </h2>
+    <div id="box">
+    </div>
+    <div id="3horse">
+      <img id="horse" src="../images/3horse.jpeg" alt="horse">
+    </div>
+  </body>
+</html>

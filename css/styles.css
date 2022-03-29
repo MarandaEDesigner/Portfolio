@@ -1,5 +1,11 @@
 
 
+
+
+
+
+/* NOTE: This is where your responsive coding ends*/
+
 body {
   margin: 0 ;
   background-image: url("../images/BG.jpg");
@@ -71,6 +77,11 @@ nav a::before {
 nav a:hover::before {
   width: 100%;
 }
+
+
+
+
+
 /* NOTE: This is the footer coding */
 
 .footer {
@@ -125,3 +136,44 @@ a.menu {
   float: inherit;
   padding-top: 20px;
 }
+
+
+
+@media screen and (max-width: 480px) {
+  /* NOTE: THIS IS FOR NAV */
+  nav li {
+    display: flex;
+    justify-content:  center;
+    flex-wrap: wrap;
+
+  }
+
+  nav a {
+    margin-right: 110px;
+    font-size: 30px;
+  }
+
+  img.logodesign {
+  width: 80%;
+  height: 90;
+  margin-left: 45px;
+
+  }
+
+  /* NOTE: ADD LOGO CLASS TO OTHER PAGES FOR THIS TO WORK */
+
+
+  /* NOTE: THIS IS FOR FOOTER */
+
+
+  a.menu {
+    font-size: 30px;
+  
+  }
+
+  .footer {
+    height: 300px;
+  }
+
+
+  }

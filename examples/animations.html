@@ -1,0 +1,87 @@
+.<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Animation example</title>
+    <style>
+      @keyframes toRed {
+        0% {
+          color: black;
+        }
+        50% {
+          color: red;
+        }
+
+       100% {
+         color: black;
+       }
+       100% {
+         color: purple;
+       }
+     }
+
+     #animation1 {
+       animation: toRed 1s infinite;
+     }
+     #box {
+       box-sizing: border-box;
+       height: 200px;
+       width: 200px;
+       background-color: lightblue;
+       animation: tocircle 2s infinite
+     }
+
+     @keyframes tocircle {
+       0%, 100% {
+         background-color: lightblue;
+         border-radius: 0px;
+       }
+
+       25% {
+         border-radius: 50px 0px 50px 75px;
+       }
+       50% {
+         background-color: blue;
+         border-radius: 100%;
+       }
+       75% {
+         transform: translateX(400px) rotate(180deg);
+       }
+     }
+
+     #horse {
+       margin-top: 200px;
+       height: 200px;
+       animation: bounce 5s infinite;
+     }
+
+     @keyframes bounce {
+       0%, 100% {
+         transform: translateX(0, 0);
+
+       }
+       10%, 30%, 50% {
+         transform: translateY(-200px);
+       }
+       20%, 40%, 60% {
+         transform: translateY(0px);
+       }
+       75% {
+         transform: translateX(400px);
+       }
+     }
+
+     /* NOTE: shake and cursor:pointer; for button
+     animation-delay: 2s? */
+
+
+    </style>
+  </head>
+  <body>
+    <h1 id="animation1">This is a basic animation</h1>
+    <div id="box"</div>
+
+    <img id="horse" src="../images/3horse.jpeg">
+
+  </body>
+</html>
