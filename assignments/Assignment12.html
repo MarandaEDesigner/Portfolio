@@ -50,9 +50,8 @@
 
       /* your CSS for tablet goes in here */
       @media screen and (min-width: 480px) and (max-width: 799px) {
-      .fakeLink:nth-child(4n){
-
-
+      aside .fakeLink:first-child {
+        padding: 20px;
       }
       .fakeLink2 {
         height: 130px;
@@ -70,6 +69,9 @@
         display: flex;
 
       }
+
+
+
       }
 
       /* your CSS for desktop goes in here */
@@ -77,13 +79,12 @@
         /* NOTE: order, flex grow, flex strength, flex shorthand */
 
         aside .fakeLink:first-child {
-          flex-grow: 80;
-          width: 90%;
+
 
         }
         .fakeLink2 {
           height: 130px;
-          width: 40%;
+
           flex: 90;
           padding: 50px;
 
@@ -94,13 +95,13 @@
           flex: 90;
 
 
+
         }
         nav {
           flex-direction: row;
           justify-content: center;
-
-          display: flex; 
-
+          display: flex;
+          flex-wrap: wrap;
 
 
 
@@ -109,11 +110,11 @@
         aside {
           flex-direction: row;
           display: flex;
-
-
-
+          flex-wrap: wrap;
 
         }
+
+
 
 
       }
