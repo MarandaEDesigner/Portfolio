@@ -131,7 +131,6 @@ a.menu {
 }
 .icon-style {
   height:70px;
-  margin-left:20px;
   margin-top: 0px;
   float: inherit;
   padding-top: 20px;
@@ -141,24 +140,47 @@ a.menu {
 
 @media screen and (max-width: 480px) {
   /* NOTE: THIS IS FOR NAV */
+
+  nav {
+    float: inherit;
+  }
+
+  .container {
+    text-align: center;
+  }
+
   nav li {
+    margin-left: 0px;
+    align-items: center;
     display: flex;
-    justify-content:  center;
-    flex-wrap: wrap;
+    justify-content: center;
+
+
 
   }
 
   nav a {
-    margin-right: 110px;
     font-size: 30px;
+    margin-right: 0px;
+
+
   }
 
   img.logodesign {
   width: 80%;
   height: 90;
-  margin-left: 45px;
+  margin-left: 0px;
+
 
   }
+
+  nav ul {
+    padding: 0px;
+    margin-left: 0px;
+  }
+
+
+
 
   /* NOTE: ADD LOGO CLASS TO OTHER PAGES FOR THIS TO WORK */
 
@@ -168,11 +190,20 @@ a.menu {
 
   a.menu {
     font-size: 30px;
-  
+
   }
 
   .footer {
     height: 300px;
+    text-align: center;
+    position:  absolute;
+    background-color: #02171C;
+  }
+
+  .icon-style{
+    margin-right: 45px;
+
+
   }
 
 
