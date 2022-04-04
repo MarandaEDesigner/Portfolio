@@ -31,6 +31,45 @@
         margin: 30px;
       }
 
+      .dealer {
+        font-family: 'Montaga', serif;
+        color: #1c4268;
+        font-size: 23px;
+        margin: 30px;
+      }
+
+      .random {
+        font-family: 'Montaga', serif;
+        color: #1c4268;
+        font-size: 23px;
+        margin: 30px;
+      }
+
+      .world {
+        font-family: 'Montaga', serif;
+        color: #1c4268;
+        font-size: 23px;
+        margin: 30px;
+      }
+
+      .end {
+        font-family: 'Montaga', serif;
+        color: #1c4268;
+        font-size: 23px;
+        margin: 30px;
+      }
+
+      .cards {
+        font-family: 'Montaga', serif;
+        color: #1c4268;
+        font-size: 23px;
+        margin: 30px;
+      }
+
+
+
+
+
 
 
        /* NOTE: THIS IS YOUR descriptions */
@@ -53,6 +92,11 @@
 
 
      }
+
+     .socialmedia {
+
+     }
+
      .nav {
        grid-area: nav;
        grid-row: 2;
@@ -104,9 +148,9 @@
        background-image: url("../../images/footerbg.jpeg");
        background-size: contain;
        text-align: center;
-
-
      }
+
+
      /* NOTE: THIS IS YOUR NAVBAR CSS */
 
      .navbar li a {
@@ -142,7 +186,15 @@
 
 
 
+     /* NOTE: THIS IS YOUR SPACING GRID(2ND) */
 
+     .grid2 {
+       display: grid;
+       grid-template-columns: 1fr;
+       grid-auto-rows: minmax(0px, auto);
+       gap: 10px 0px;
+
+     }
 
      /* NOTE: THIS IS YOUR GRID */
      .Grid {
@@ -166,9 +218,37 @@
 
 
 
+
+      /* NOTE: THIS IS YOUR SPACING GRID(3RD) */
+
+      .grid3 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: minmax(0px, auto);
+        gap: 10px 0px;
+
+      }
+
+
+
      /* NOTE: WHERE MOBILE CODING GOES */
 
-     @media screen and (max-width: 480px) {
+     @media screen and (max-width: 1000px) {
+       .Grid {
+         display: grid;
+         grid-template-columns: 1fr;
+         grid-template-areas:
+         "logo"
+         "title"
+         "nav"
+         "header"
+         "content"
+         "content2"
+         "content3"
+         "footer"
+
+       }
+
 
 
      }
@@ -176,6 +256,9 @@
     </style>
   </head>
   <body>
+    <div class="grid2">
+    </div>
+
     <div class="Grid">
       <div class="logo">
         <img src="../../images/martinlogo.gif">
@@ -185,10 +268,18 @@
       <!-- NOTE: <img src="../../images/martinlogo.gif"> -->
       <div class="title">
           <img src="../../images/martinheader.jpeg">
+          <a href="#">
+            <img src="../../images/facebook.jpeg"
+          width="" >
+         </a>
+          <img src="../../images/twitter.jpeg"
+          width="">
+          <img src="../../images/king.jpeg"
+          width="">
 
 
       </div>
-      <!-- NOTE: put social buttons in nav> -->
+      <!-- NOTE: nav> -->
 
       <div class="nav">
         <nav class= "navbar">
@@ -242,26 +333,26 @@
         – the iconic family at the heart of HBO’s
         Game of Thrones prequel series, House of the Dragon –
         featuring over 180 all-new… Read more »
-        <div class="rise">Dealer Takes Two </div>
+        <div class="dealer">Dealer Takes Two </div>
         Kings and deuces may not be as iconic… or ominous…
         a poker hand as aces and eights, but it’s not a bad hand
         to be dealt… and Tor will be dealing those cards to all the
         Wild Cards fans out… Read more »
-        <div class="rise">Random Updates and Bits o’ News </div>
+        <div class="random">Random Updates and Bits o’ News </div>
         I look around, and I don’t know where 2021 went.   I blinked and it was gone.
         Not a year that I am going to mourn much, any more than 2020.
         A global pandemic, so many deaths (including friends of mine,… Read more »
-        <div class="rise">World of Fire and Blood Calendar 2023 </div>
+        <div class="world">World of Fire and Blood Calendar 2023 </div>
         We have some beautiful art for next years calendar. This time around
         we’re focusing on a whole World of Ice and Fire theme with amazing
         new artwork by a collaboration of amazing artists.  Check out
         some of their outstanding work coming… Read more »
-        <div class="rise">End of an Era </div>
+        <div class="end">End of an Era </div>
         Our friend Janis Ian was in Santa Fe last week, at the Jean Cocteau Cinema.
         It was the first stop of her new tour.  She did three shows for us
         (Thursday, Friday, and Saturday nights, all sold out), and on… Read more »
 
-        <div class="rise">The Cards Keep Turning </div>
+        <div class="cards">The Cards Keep Turning </div>
         Wild Cards fans have a lot to look forward to in the next
         couple of years, in addition to the Marvel comics series
         announced below. We have three new books in the pipeline.
@@ -276,6 +367,8 @@
          © 2022 GEORGE R.R. MARTIN. ALL RIGHTS RESERVED.
 
 
+
+      <div class="grid3">
       </div>
 
 
