@@ -9,7 +9,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cinzel&family=Dancing+Script&family=MedievalSharp&family=Montaga&family=Poppins:wght@100;200&family=Supermercado+One&display=swap');
      /* NOTE: BG IMAGE */
       body {
-        background-image: url("../../images/martinbgg.jpg");
+        background-image: url("../../images/greybg.jpg");
         background-size: cover;
         background-repeat: no repeat;
         background-attachment: fixed;
@@ -21,10 +21,14 @@
         font-family: 'Montaga', serif;
         color: #1c4268;
         font-size: 23px;
-        margin: 30px;
+        margin: 23px;
       }
 
        /* NOTE: THIS IS YOUR descriptions */
+
+       #text {
+         margin-left: 23px;
+       }
 
      /* NOTE: THESE ARE YOUR GRID STYLE SECTION font  */
 
@@ -48,7 +52,6 @@
 
      .nav {
        grid-area: nav;
-       grid-row: 2;
        background-size:  cover;
 
 
@@ -57,10 +60,10 @@
      .header {
        background-color: #4D4444;
        grid-area: header;
-       grid-row: 3;
-       height: 470px;
-       background-image: url("../../images/dragon.jpeg");
-       background-size: cover;
+       height: 300px;
+       background-image: url("../../images/fireblood.jpeg");
+
+       background-position: center;
 
 
      }
@@ -79,7 +82,7 @@
      .content3 {
        background-color: #D8D8D8;
        grid-area: content3;
-       height: 1106px;
+       height: 1150px;
 
 
 
@@ -87,10 +90,10 @@
      .footer {
        background-color: #7C8587;
        grid-area: footer;
-       grid-row: 6;
+
        height: 150px;
        background-image: url("../../images/footerbg.jpeg");
-       background-size: contain;
+       background-position: center;
        text-align: center;
      }
 
@@ -103,8 +106,6 @@
        color: black;
        list-style: none;
        margin: 25px;
-       font-size: 22px;
-
      }
      .navbar {
        list-style: none;
@@ -128,56 +129,123 @@
        padding: 30px;
      }
 
+     /* NOTE: THIS IS YOUR CONTENT2 CSS */
 
+     #nextappearance {
+       background-image: url("../../images/eventsbg.jpeg");
+       height: 190px;
+       background-repeat: no-repeat;
+       background-position: right bottom;
+     }
 
-     /* NOTE: THIS IS YOUR SPACING GRID(2ND) */
+     #nextpublication {
+       background-image: url("../../images/releasebg.jpeg");
+       background-repeat: no-repeat;
+       height: 300px;
+     }
 
-     .grid2 {
-       display: grid;
-       grid-template-columns: 1fr;
-       grid-auto-rows: minmax(0px, auto);
-       gap: 10px 0px;
+     #valyrian {
+       background-image: url("../../images/valyrian.jpeg");
+       background-repeat: repeat;
+       height: 240px;
 
      }
+
+     #stage {
+       background-image: url("../../images/stagecoach.jpeg");
+       background-repeat: repeat;
+       height: 240px;
+
+     }
+
+     h3 {
+       font-family: 'Montaga', serif;
+       color: white;
+       margin: 25px;
+       font-size: 18px;
+     }
+
+     .yellow {
+       color: #dbbf73;
+       margin: 23px;
+     }
+     .white {
+       color: white;
+       margin: 23px;
+
+     }
+
+     .events2 {
+       margin-left: 30px;
+     }
+
+     .events {
+       margin-left: 30px;
+     }
+
 
      /* NOTE: THIS IS YOUR GRID */
      .Grid {
        display: grid;
-       grid-template-columns: 1fr 400px 1fr 1fr;
+       grid-template-columns: 1fr 333px 334px 333px 1fr;
        grid-auto-rows: minmax(0px, auto);
        gap: 10px 0px;
        /* NOTE: HERE ARE YOUR GRID TEMPLATE AREAS */
        grid-template-areas:
-         ". logo logo logo ."
-         ". title title title ."
-         ". nav nav nav ."
-         ". header header header ."
-         ". content content content ."
-         ". content2 content2 content2 ."
-         ". content3 content3 content3 ."
-         ". footer footer footer .";
+         "gutter1 logo logo logo gutter2"
+         "gutter1 title title title gutter2"
+         "gutter1 nav nav nav gutter2"
+         "gutter1 header header header gutter2"
+         "gutter1 content content content gutter2"
+         "gutter1 content2 content3 content3 gutter2"
+         "gutter1 footer footer footer gutter2";
 
      }
 
 
 
 
+     #gutter1 {
+       border-right:  1px solid grey;
+       grid-area: gutter1;
+       margin-right: 8px;
+
+
+     }
+     #gutter2 {
+       border-left: 1px solid grey;
+       grid-area: gutter2;
+       margin-left: 8px;
+
+     }
+     /* NOTE: THIS IS YOUR BORDER CSS */
+
+     #valyrian, #stage, #nextpublication, #nextappearance {
+       border: 4px solid grey;
+       margin: 10px;
+     }
+
+     .header, .content3 {
+       border: 4px solid grey;
+       margin: 10px;
+     }
+
+     img.contentimg {
+       border: 4px solid grey;
+       margin-left: 9px;
+       height: 200px;
+     }
+
 
       /* NOTE: THIS IS YOUR SPACING GRID(3RD) */
 
-      .grid3 {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-auto-rows: minmax(0px, auto);
-        gap: 10px 0px;
 
-      }
 
 
 
      /* NOTE: WHERE MOBILE CODING GOES */
 
-     @media screen and (max-width: 1000px) {
+     @media screen and (max-width: 800px) {
        .Grid {
          display: grid;
          grid-template-columns: 1fr;
@@ -193,6 +261,23 @@
 
        }
 
+       nav {
+         display: flex;
+         flex-direction: column;
+       }
+
+       .navbar {
+         text-align: center;
+         position: inherit;
+       }
+
+       .header {
+         width: 80%;
+         align-content: center;
+       }
+
+
+
 
 
      }
@@ -200,10 +285,11 @@
     </style>
   </head>
   <body>
-    <div class="grid2">
-    </div>
-
     <div class="Grid">
+      <div id="gutter1"></div>
+      <div id="gutter2"></div>
+    <header class="header1">
+
       <div class="logo">
         <img src="../../images/martinlogo.gif">
 
@@ -236,84 +322,127 @@
           <li><a href="#">MERCHANDISE</a></li>
         </nav>
       </div>
+    </header>
 
 
       <div class="header">
 
       </div>
       <div class="content">
-        <img src="../../images/sun.jpeg"
-        width="438" >
-        <img src="../../images/newsletter.png"
-        width="438">
-        <img src="../../images/darksword.jpeg"
-        width="438">
+        <img class= "contentimg" src="../../images/sun.jpeg"
+        width="310" >
+        <img class="contentimg" src="../../images/newsletter.png"
+        width="310">
+        <img class="contentimg" src="../../images/darksword.jpeg"
+        width="310">
 
 
 
       </div>
       <div class="content2">
-        <img class= "events" src="../../images/eventsbg.jpeg"
-        width="400" height= "190">
-        <img class= "news" src="../../images/releasebg.jpeg"
-        width="400" height="300">
-        <img class= "dark" src="../../images/valyrian.jpeg"
+        <div id="nextappearance">
+          <h3>NEXT APPEARANCE</h3>
+          <div>
+            <div class="yellow">September 1-5 2022</div>
+            <div class="white">2022 Worldcon in Chicago, Chicon 8</div>
+            <img class= "events" src="../../images/appearance.jpg"
+             width="" height= "">
+          </div>
+        </div>
+
+        <div id="nextpublication">
+          <h3>NEXT PUBLICATION</h3>
+          <div>
+            <div class="white">Check back soon for information on future releases.
+            </div>
+            <img class= "events2" src="../../images/publication.png"
+             width="" height= "">
+          </div>
+        </div>
+
+        <div id="valyrian">
+        </div>
+        <div id="stage">
+        </div>
+        <!-- <img class= "dark" src="../../images/valyrian.jpeg"
         width="400">
         <img class= "l" src="../../images/stagecoach.jpeg"
-        width="400">
+        width="400"> -->
+
+
 
       </div>
+
+
       <div class="content3">
         <img class= "" src="../../images/current.png"
-        width="800">
+        width="500">
 
-        <div class="dragon">The Dragons Are Coming... </div>
-        ...they’re on the wing, and will be arriving in August.
+        <div class="dragon">The Dragons Are Coming...
+        </div>
+        <div id="text">
+          ...they’re on the wing, and will be arriving in August.
         Details here: https://variety.com/2022/tv/news/game-of-thrones-house-of-the-dragon-premiere-date-1235215983/
         Read more »
-        <div class="dragon">THE RISE OF THE DRAGON... </div>
-        We’re so excited to announce The Rise of The Dragon, a lavish visual history
+        </div>
+        <div class="dragon">THE RISE OF THE DRAGON...
+        </div>
+        <div id="text">
+          We’re so excited to announce The Rise of The Dragon, a lavish visual history
         of House Targaryen
         – the iconic family at the heart of HBO’s
         Game of Thrones prequel series, House of the Dragon –
         featuring over 180 all-new… Read more »
-        <div class="dragon">Dealer Takes Two </div>
-        Kings and deuces may not be as iconic… or ominous…
+        </div>
+        <div class="dragon">Dealer Takes Two
+        </div>
+        <div id="text">
+          Kings and deuces may not be as iconic… or ominous…
         a poker hand as aces and eights, but it’s not a bad hand
         to be dealt… and Tor will be dealing those cards to all the
         Wild Cards fans out… Read more »
-        <div class="dragon">Random Updates and Bits o’ News </div>
-        I look around, and I don’t know where 2021 went.   I blinked and it was gone.
+        </div>
+        <div class="dragon">Random Updates and Bits o’ News
+        </div>
+        <div id="text">
+          I look around, and I don’t know where 2021 went.   I blinked and it was gone.
         Not a year that I am going to mourn much, any more than 2020.
         A global pandemic, so many deaths (including friends of mine,… Read more »
-        <div class="dragon">World of Fire and Blood Calendar 2023 </div>
-        We have some beautiful art for next years calendar. This time around
+        </div>
+        <div class="dragon">World of Fire and Blood Calendar 2023
+        </div>
+        <div id="text">
+          We have some beautiful art for next years calendar. This time around
         we’re focusing on a whole World of Ice and Fire theme with amazing
         new artwork by a collaboration of amazing artists.  Check out
         some of their outstanding work coming… Read more »
-        <div class="dragon">End of an Era </div>
-        Our friend Janis Ian was in Santa Fe last week, at the Jean Cocteau Cinema.
+        </div>
+        <div class="dragon">End of an Era
+        </div>
+        <div id="text">
+          Our friend Janis Ian was in Santa Fe last week, at the Jean Cocteau Cinema.
         It was the first stop of her new tour.  She did three shows for us
         (Thursday, Friday, and Saturday nights, all sold out), and on… Read more »
+        </div>
 
-        <div class="dragon">The Cards Keep Turning </div>
+        <div class="dragon">The Cards Keep Turning
+        </div>
+        <div id="text">
         Wild Cards fans have a lot to look forward to in the next
         couple of years, in addition to the Marvel comics series
         announced below. We have three new books in the pipeline.
         FULL HOUSE will be a collection of… Read more »
+      </div>
 
       <img class= "blog" src="../../images/notablog.png"
       width="240">
 
 
       </div>
-      <div class="footer">
+      <footer class="footer">
          © 2022 GEORGE R.R. MARTIN. ALL RIGHTS RESERVED.
 
-
-
-      <div class="grid3">
-      </div>
+     </footer>
 
 
 
