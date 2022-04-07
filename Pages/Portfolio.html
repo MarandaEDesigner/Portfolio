@@ -15,7 +15,7 @@
 
 .May1 {
   background-color: #C4BF34;
-  background-image: url(../portfolio/may1.jpg);
+  background-image: url("../portfolio/may1.jpg");
   background-size: cover;
   background-position: center;
 
@@ -23,28 +23,28 @@
 
 .May2 {
   background-color: #C4BF34;
-  background-image: url(../portfolio/may2.jpg);
+  background-image: url("../portfolio/may2.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .May3 {
   background-color: #C4BF34;
-  background-image: url(../portfolio/may3.jpg);
+  background-image: url("../portfolio/may3.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .May4 {
   background-color: #C4BF34;
-  background-image: url(../portfolio/may4.jpg);
+  background-image: url("../portfolio/may4.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .May5 {
   background-color: #C4BF34;
-  background-image: url(../portfolio/may5.jpg);
+  background-image: url("../portfolio/may5.jpg");
   background-size: cover;
   background-position: center;
 
@@ -58,13 +58,14 @@
   grid-template-columns: repeat(3, 3fr);
   grid-gap: 10px;
   grid-template-areas:
-  ""
+  "May1 May2 May3"
+  "May4 May5"
 }
 /* NOTE: COSMETIC GRID */
 
 .Cosmetic1 {
   background-color: #C4BF34;
-  background-image: url(../portfolio/Cosmetic1.jpg);
+  background-image: url("../portfolio/Cosmetic1.jpg");
   background-size: cover;
   background-position: center;
 
@@ -72,14 +73,14 @@
 
 .Cosmetic2 {
   background-color: #C4BF34;
-  background-image: url(../portfolio/Cosmetic2.jpg);
+  background-image: url("../portfolio/Cosmetic2.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .Cosmetic3 {
   background-color: #C4BF34;
-  background-image: url(../portfolio/Cosmetic3.jpg);
+  background-image: url("../portfolio/Cosmetic3.jpg");
   background-size: cover;
   background-position: center;
 
@@ -102,7 +103,7 @@
 .DropperGrid {
   display: grid;
   height: 100%;
-  grid-template-rows: 200px 300px;
+  grid-template-rows: 300px;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
   grid-template-areas:
@@ -112,7 +113,7 @@
 
 .Dropper1 {
   background-color: #C4BF34;
-  background-image: url(../portfolio/dropper1.jpg);
+  background-image: url("../portfolio/dropper1.jpg");
   background-size: cover;
   background-position: center;
   height: 390px;
@@ -120,7 +121,7 @@
 
 .Dropper2 {
   background-color: #C4BF34;
-  background-image: url(../portfolio/dropper2.jpg);
+  background-image: url("../portfolio/dropper2.jpg");
   background-size: cover;
   background-position: center;
   height: 390px;
@@ -132,32 +133,40 @@
 
 .LeafGrid {
   display: grid;
-  height: 100%;
-  grid-template-rows: 300px 300px;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 10px;
+  grid-template-columns: 1fr 600px;
+  grid-auto-rows: minmax(0px, auto);
+  gap: 10px;
   grid-template-areas:
-  ""
+  ". Leaf1 Leaf2 ."
+  ". Leaf2 ."
+  ". Leaf3 ."
+  ". Leaf4 ."
+  ". Leaf5 ."
+  ". Leaf6 ."
+  ". Leaf7 ."
+  ". Leaf8 ."
+  ". Leaf9 ."
+  ". Leaf10 ."
 }
 
 .Leaf1 {
-  background-color: #C4BF34;
-  background-image: url(../portfolio/leaf1.jpg);
+  grid-area: Leaf1;
+  background-image: url("../portfolio/leaf1.jpg");
   background-size: cover;
   background-position: center;
 
 }
 
 .Leaf2 {
-  background-color: #C4BF34;
-  background-image: url(../portfolio/leaf2.jpg);
+  grid-area: Leaf2;
+  background-image: url("../portfolio/leaf2.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .Leaf3 {
-  background-color: #C4BF34;
-  background-image: url(../portfolio/leaf3.jpg);
+  grid-area: Leaf3;
+  background-image: url("../portfolio/leaf3.jpg");
   background-size: cover;
   background-position: center;
 
@@ -165,23 +174,23 @@
 
 
 .Leaf4 {
-  background-color: #C4BF34;
-  background-image: url(../portfolio/leaf4.jpg);
+  grid-area: Leaf4;
+  background-image: url("../portfolio/leaf4.jpg");
   background-size: cover;
   background-position: center;
 
 }
 
 .Leaf5 {
-  background-color: #C4BF34;
-  background-image: url(../portfolio/leaf5.jpg);
+  grid-area: Leaf5;
+  background-image: url("../portfolio/leaf5.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .Leaf6 {
-  background-color: #C4BF34;
-  background-image: url(../portfolio/leaf6.jpg);
+  grid-area: Leaf6;
+  background-image: url("../portfolio/leaf6.jpg");
   background-size: cover;
   background-position: center;
 
@@ -189,31 +198,35 @@
 
 
 .Leaf7 {
+  grid-area: Leaf7;
   background-color: #C4BF34;
-  background-image: url(../portfolio/leaf7.jpg);
+  background-image: url("../portfolio/leaf7.jpg");
   background-size: cover;
   background-position: center;
 
 }
 
 .Leaf8 {
+  grid-area: Leaf8;
   background-color: #C4BF34;
-  background-image: url(../portfolio/leaf8.jpg);
+  background-image: url("../portfolio/leaf8.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .Leaf9 {
+  grid-area: Leaf9;
   background-color: #C4BF34;
-  background-image: url(../portfolio/leaf9.jpg);
+  background-image: url("../portfolio/leaf9.jpg");
   background-size: cover;
   background-position: center;
 
 }
 
 .Leaf10 {
+  grid-area: Leaf10;
   background-color: #C4BF34;
-  background-image: url(../portfolio/leaf10.jpg);
+  background-image: url("../portfolio/leaf10.jpg");
   background-size: cover;
   background-position: center;
 
