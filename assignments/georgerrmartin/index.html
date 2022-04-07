@@ -35,9 +35,36 @@
      .logo {
        grid-area: logo;
        width: 19%;
+     }
 
+     .logo {
+       position: relative;
+       max-width: 100%;
+       width: 360px;
+     }
+
+     .logo img.hoverlogo {
+       position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      object-fit: contain;
+      opacity: 0;
+      transition: opacity .2s;
 
      }
+
+     .logo:hover img.hoverlogo {
+      opacity: 1;
+    }
+
+    .logo:hover img.logoimg {
+      opacity: 0;
+    }
+
+
+
      .title {
        grid-area: title;
        grid-row: 1;
@@ -294,8 +321,9 @@
 
        #nextappearance, #nextpublication{
          border: 4px solid grey;
-         width: 300px;
+         width: auto;
          padding: 13px;
+         background-size: cover;
 
        }
 
@@ -308,15 +336,18 @@
 
        #valyrian, #stage {
         border: 4px solid grey;
-        width: 250px;
-        height: 180px;
+        width: auto;
+        height: 290px;
         padding: 30px;
+        background-size: cover;
 
 
       }
 
       .content2 {
        height: auto;
+       display: flex;
+       flex-direction: column;
 
 
       }
@@ -346,8 +377,21 @@
        .logo {
          width: 100%;
          text-align: center;
-
+         position: relative;
        }
+
+       .logo:hover img.hoverlogo {
+        opacity: 0;
+      }
+
+      .logo:hover img.logoimg {
+        opacity: 100%;
+      }
+
+
+
+
+
 
        img.current {
          width: 100%;
@@ -366,21 +410,21 @@
       <div id="gutter2"></div>
 
       <div class="logo">
-        <img class= "logoimg" src="../../images/martinlogo.gif">
-
-
+        <img class= "logoimg" src="../../images/shield.jpeg">
+        <img class= "hoverlogo" src="../../images/martinlogo.gif">
       </div>
       <!-- NOTE: <img src="../../images/martinlogo.gif"> -->
       <header class="title">
           <img class="titleimg" src="../../images/martinheader.jpeg">
           <a href="#">
-            <img src="../../images/facebook.jpeg"
-          width="" >
+            <img src="../../images/facebook.jpeg">
          </a>
-          <img src="../../images/twitter.jpeg"
-          width="">
-          <img src="../../images/king.jpeg"
-          width="">
+         <a href="#">
+          <img src="../../images/twitter.jpeg">
+         </a>
+         <a href="#">
+          <img src="../../images/king.jpeg">
+         </a>
 
 
       </header>

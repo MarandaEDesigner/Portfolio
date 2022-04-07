@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>javascript examples</title>
+  </head>
+  <body>
+    <input type="button" id="button1" value="Click 1">
+    <input type="button"
+    id="colorButton"
+    value="Click to change color">
+
+
+
+
+
+
+
+   <script type="text/javascript">
+      // NOTE: alert(greeting);
+
+     let greeting = 'Hello World!';
+
+     function logText(textToLog) {
+       console.log(textToLog);
+       // NOTE: alert(textToLog);
+     }
+
+     logText(greeting);
+     logText('how are you doing');
+     logText('gidle')
+
+     let button1 = document.getElementById('button1');
+     button1.onclick = () => {
+       logText(button1.id);
+     };
+
+     function getRandomNumberBetween(lowValue, highValue) {
+       let range = highValue - lowValue;
+       let randomRangeValue = Math.random() * range;
+       return Math.floor(lowValue + randomRangeValue);
+     }
+
+
+
+     function setRandomBackgroundColor() {
+       let body = document.getElementsByTagName('body') [0];
+       let r = getRandomNumberBetween(0, 255);
+       let g = getRandomNumberBetween(0, 255);
+       let b = getRandomNumberBetween(0, 255);
+
+       let colorValue = `rgb(${r}, ${g}, ${b})`;
+       body.style.backgroundColor = colorValue;
+       logText(colorValue);
+     }
+
+      let colorButton = document.getElementById('colorButton');
+      colorButton.onclick = setRandomBackgroundColor;
+
+   </script>
+  </body>
+</html>
