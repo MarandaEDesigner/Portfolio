@@ -54,12 +54,12 @@
 .MaybielleGrid {
   display: grid;
   height: 100%;
-  grid-template-rows: 200px 300px;
+  grid-template-rows: 400px 400px;
   grid-template-columns: repeat(3, 3fr);
   grid-gap: 10px;
   grid-template-areas:
-  "May1 May2 May3"
-  "May4 May5"
+  ". May1 May2 May3 ."
+  ". May4 May5 ."
 }
 /* NOTE: COSMETIC GRID */
 
@@ -90,11 +90,12 @@
 .CosmeticGrid {
   display: grid;
   height: 100%;
-  grid-template-rows: 300px 300px;
-  grid-template-columns: repeat(2, 1fr);
+  margin-top: 10px;
+  grid-template-rows: 400px;
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
   grid-template-areas:
-  ""
+  ". Cosmetic1 Cosmetic2 Cosmetic 3 ."
 }
 
 /* NOTE: DROPPER GRID */
@@ -103,11 +104,13 @@
 .DropperGrid {
   display: grid;
   height: 100%;
-  grid-template-rows: 300px;
+  margin-top: 10px;
+  grid-template-rows: 460px;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
   grid-template-areas:
-  ""
+  ". Dropper1 ."
+  ". Dropper2 ."
 }
 
 
@@ -116,7 +119,7 @@
   background-image: url("../portfolio/dropper1.jpg");
   background-size: cover;
   background-position: center;
-  height: 390px;
+
 }
 
 .Dropper2 {
@@ -124,7 +127,6 @@
   background-image: url("../portfolio/dropper2.jpg");
   background-size: cover;
   background-position: center;
-  height: 390px;
 
 }
 
@@ -133,11 +135,12 @@
 
 .LeafGrid {
   display: grid;
-  grid-template-columns: 1fr 600px;
-  grid-auto-rows: minmax(0px, auto);
-  gap: 10px;
+  height: 100%;
+  grid-template-rows: 300px 300px 300px 300px;
+  grid-template-columns: repeat(3 4fr);
+  grid-gap: 10px;
   grid-template-areas:
-  ". Leaf1 Leaf2 ."
+  ". Leaf1 ."
   ". Leaf2 ."
   ". Leaf3 ."
   ". Leaf4 ."
@@ -147,10 +150,13 @@
   ". Leaf8 ."
   ". Leaf9 ."
   ". Leaf10 ."
+  ". Leaf11 ."
+  ". Leaf12 ."
+
+
 }
 
 .Leaf1 {
-  grid-area: Leaf1;
   background-image: url("../portfolio/leaf1.jpg");
   background-size: cover;
   background-position: center;
@@ -158,14 +164,12 @@
 }
 
 .Leaf2 {
-  grid-area: Leaf2;
   background-image: url("../portfolio/leaf2.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .Leaf3 {
-  grid-area: Leaf3;
   background-image: url("../portfolio/leaf3.jpg");
   background-size: cover;
   background-position: center;
@@ -174,7 +178,6 @@
 
 
 .Leaf4 {
-  grid-area: Leaf4;
   background-image: url("../portfolio/leaf4.jpg");
   background-size: cover;
   background-position: center;
@@ -182,14 +185,12 @@
 }
 
 .Leaf5 {
-  grid-area: Leaf5;
   background-image: url("../portfolio/leaf5.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .Leaf6 {
-  grid-area: Leaf6;
   background-image: url("../portfolio/leaf6.jpg");
   background-size: cover;
   background-position: center;
@@ -198,7 +199,6 @@
 
 
 .Leaf7 {
-  grid-area: Leaf7;
   background-color: #C4BF34;
   background-image: url("../portfolio/leaf7.jpg");
   background-size: cover;
@@ -207,7 +207,6 @@
 }
 
 .Leaf8 {
-  grid-area: Leaf8;
   background-color: #C4BF34;
   background-image: url("../portfolio/leaf8.jpg");
   background-size: cover;
@@ -215,7 +214,6 @@
 }
 
 .Leaf9 {
-  grid-area: Leaf9;
   background-color: #C4BF34;
   background-image: url("../portfolio/leaf9.jpg");
   background-size: cover;
@@ -224,13 +222,129 @@
 }
 
 .Leaf10 {
-  grid-area: Leaf10;
   background-color: #C4BF34;
   background-image: url("../portfolio/leaf10.jpg");
   background-size: cover;
   background-position: center;
 
 }
+
+.Leaf11 {
+  background-color: #C4BF34;
+  background-image: url("../portfolio/leaf11.jpg");
+  background-size: cover;
+  background-position: center;
+
+}
+
+.Leaf12 {
+  background-color: #C4BF34;
+  background-image: url("../portfolio/leaf12.jpg");
+  background-size: cover;
+  background-position: center;
+
+}
+
+/* NOTE: HONEYGRID */
+
+.HoneyGrid {
+  display: grid;
+  height: 100%;
+  grid-template-rows: 300px 300px;
+  grid-template-columns: repeat(3, 3fr);
+  grid-gap: 10px;
+  grid-template-areas:
+  "Honey1 Honey2 Honey3"
+  "Honey4 Honey5 Honey6"
+
+}
+
+.Honey1 {
+  background-image: url("../portfolio/Honey1.jpg");
+  background-size: cover;
+  background-position: center;
+
+}
+
+.Honey2 {
+  background-image: url("../portfolio/Honey2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.Honey3 {
+  background-image: url("../portfolio/Honey3.jpg");
+  background-size: cover;
+  background-position: center;
+
+}
+
+
+.Honey4 {
+  background-image: url("../portfolio/Honey4.jpg");
+  background-size: cover;
+  background-position: center;
+
+}
+
+.Honey5 {
+  background-image: url("../portfolio/Honey5.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.Honey6 {
+  background-image: url("../portfolio/Honey6.jpg");
+  background-size: cover;
+  background-position: center;
+
+}
+
+/* NOTE: FAIREGRID */
+
+
+.FaireGrid {
+  display: grid;
+  height: 100%;
+  margin-top: 10px;
+  grid-template-rows: 460px 460px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-template-areas:
+  "Faire1 Faire2"
+  "Faire3 Faire4"
+}
+
+
+.Faire1 {
+  background-color: #C4BF34;
+  background-image: url("../portfolio/Faire1.jpg");
+  background-size: cover;
+  background-position: center;
+
+}
+
+.Faire2 {
+  background-color: #C4BF34;
+  background-image: url("../portfolio/Faire2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.Faire3 {
+  background-color: #C4BF34;
+  background-image: url("../portfolio/Faire3.jpg");
+  background-size: cover;
+  background-position: center;
+
+}
+.Faire4 {
+  background-color: #C4BF34;
+  background-image: url("../portfolio/Faire4.jpg");
+  background-size: cover;
+  background-position: center;
+
+}
+
 
 
 
@@ -253,7 +367,7 @@
 
           <li><a href="../index.html">Home</a></li>
           <li><a href="About.html">About</a></li>
-          <li><a href="Portfolio.html">Portfolio</a></li>
+          <li><a href="Portfolio.html">Gallery</a></li>
   <!--- These are your page links, come back to edit it --->
 
         </ul>
@@ -270,41 +384,58 @@
    <br />
    <br />
       <div class="MaybielleGrid">
-        <div class="May1">May1</div>
-        <div class="May2">May2</div>
-        <div class="May3">May3</div>
-        <div class="May4">May4</div>
-        <div class="May5">May5</div>
+        <div class="May1"></div>
+        <div class="May2"></div>
+        <div class="May3"></div>
+        <div class="May4"></div>
+        <div class="May5"></div>
       </div>
       <!--- This is where your COSMETIC grid is --->
       <div class="CosmeticGrid">
-        <div class="Cosmetic1">cosmetic1</div>
-        <div class="Cosmetic2">cosmetic2</div>
-        <div class="Cosmetic3">cosmetic3</div>
+        <div class="Cosmetic1"></div>
+        <div class="Cosmetic2"></div>
+        <div class="Cosmetic3"></div>
       </div>
 
       <!--- This is where your DROPPER grid is --->
       <div class="DropperGrid">
-        <div class="Dropper1">Dropper1</div>
-        <div class="Dropper2">Dropper2</div>
+        <div class="Dropper1"></div>
+        <div class="Dropper2"></div>
       </div>
 
       <!--- This is where your LEAFPOOl grid is --->
       <div class="LeafGrid">
-        <div class="Leaf1">leaf1</div>
-        <div class="Leaf2">leaf2</div>
-        <div class="Leaf3">leaf3</div>
-        <div class="Leaf4">leaf4</div>
-        <div class="Leaf5">leaf5</div>
-        <div class="Leaf6">leaf6</div>
-        <div class="Leaf7">leaf7</div>
-        <div class="Leaf8">leaf8</div>
-        <div class="Leaf9">leaf9</div>
-        <div class="Leaf10">leaf10</div>
+        <div class="Leaf1"></div>
+        <div class="Leaf2"></div>
+        <div class="Leaf3"></div>
+        <div class="Leaf4"></div>
+        <div class="Leaf5"></div>
+        <div class="Leaf6"></div>
+        <div class="Leaf7"></div>
+        <div class="Leaf8"></div>
+        <div class="Leaf9"></div>
+        <div class="Leaf10"></div>
+        <div class="Leaf11"></div>
+        <div class="Leaf12"></div>
       </div>
 
       <!--- This is where your HONEYBEE grid is --->
       <div class="HoneyGrid">
+        <div class="Honey1"></div>
+        <div class="Honey2"></div>
+        <div class="Honey3"></div>
+        <div class="Honey4"></div>
+        <div class="Honey5"></div>
+        <div class="Honey6"></div>
+      </div>
+
+      <!-- NOTE: THIS IS YOUR FAIRE GRID -->
+
+      <div class="FaireGrid">
+        <div class="Faire1"></div>
+        <div class="Faire2"></div>
+        <div class="Faire3"></div>
+        <div class="Faire4"></div>
       </div>
 
 
