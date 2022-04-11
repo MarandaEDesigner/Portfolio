@@ -13,6 +13,7 @@
 
     #Portrait {
       background-image: url("../portfolio/");
+      grid-area: sidenav;
     }
 
     #Containerinfo {
@@ -22,8 +23,64 @@
       border: #02171C;
     }
 
+    #Skill1 {
+      background-color: #02171C;
+      border-radius: 50%;
+      width: 230px;
+      height: 230px;
+    }
+    #Skill2 {
+      background-color: #02171C;
+      border-radius: 50%;
+      width: 230px;
+      height: 230px;
+    }
+    #Skill3 {
+      background-color: #02171C;
+      border-radius: 50%;
+      width: 230px;
+      height: 230px;
+    }
+    #Skill4 {
+      background-color: #02171C;
+      border-radius: 50%;
+      width: 230px;
+      height: 230px;
+    }
 
 
+
+
+
+
+
+    /* NOTE: GRID */
+    .Skillgrid {
+      display: grid;
+      height: 100%;
+      grid-template-rows: 3fr;
+      grid-template-columns: 1fr;
+      grid-gap: 20px 10px;
+      grid-template-areas:
+      ""
+    }
+
+    .Aboutgrid {
+      display: grid;
+      height: 100%;
+      grid-template-rows: 3fr;
+      grid-template-columns: 1fr;
+      grid-gap: 20px 10px;
+      grid-template-areas:
+      ""
+    }
+
+
+/* NOTE: THIS IS UR RESPONSIVE */
+
+@media screen and (max-width: 687px) {
+
+}
 
     </style>
   </head>
@@ -54,16 +111,24 @@
 
 
   <!--- This is where the navigation bar coding ends --->
-  
-  <div id="Portrait">
-  </div>
-  <div id="Containerinfo">
-  </div>
-  <div id="Skill1">
-  </div>
-  <div id="Skill2">
-  </div>
-  <div id="Skill3">
+
+  <!-- NOTE: GRID -->
+  <div class="Aboutgrid">
+   <div id="Portrait">
+   </div>
+   <div id="Containerinfo">
+   </div>
+ </div>
+
+  <div class="Skillgrid">
+   <div id="Skill1">
+   </div>
+   <div id="Skill2">
+   </div>
+   <div id="Skill3">
+   </div>
+   <div id="Skill4">
+   </div>
   </div>
 
 
@@ -71,13 +136,6 @@
 
   <!-- NOTE: this is the coding for your form -->
   <form>
-
-
-
-
-
-
-
 
 
   </form>
