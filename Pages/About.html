@@ -14,9 +14,9 @@
     #Containerinfo {
       background-color: #02171C;
       height: 600px;
-      border-radius: 50%;
+      border-radius: 30% 40% 60%;
       border: #02171C;
-      width: 500px;
+      width: 600px;
     }
 
     #Portrait {
@@ -35,6 +35,9 @@
       border-radius: 50%;
       width: 230px;
       height: 230px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     #Skill2 {
       grid-area: Skill2;
@@ -42,6 +45,9 @@
       border-radius: 50%;
       width: 230px;
       height: 230px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     #Skill3 {
       grid-area: Skill3;
@@ -49,6 +55,9 @@
       border-radius: 50%;
       width: 230px;
       height: 230px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     #Skill4 {
       grid-area: Skill4;
@@ -56,11 +65,15 @@
       border-radius: 50%;
       width: 230px;
       height: 230px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     p {
       color: white;
       font-size: 24px;
+      text-align: center;
     }
 
 
@@ -76,7 +89,6 @@
       grid-template-rows: 260px;
       grid-template-columns: repeat(3, 1fr)
       padding-top: 20px;
-      grid-gap: 10px;
       grid-template-areas:
       "Skill1 Skill2 Skill3 Skill4"
     }
@@ -86,7 +98,7 @@
       display: grid;
       height: 100%;
       grid-template-rows: 3fr;
-      grid-template-columns: 2fr;
+      grid-template-columns: 1fr 1fr;
       grid-gap: 20px 10px;
       grid-template-areas:
       "Portrait"
@@ -125,11 +137,12 @@
 
      </div>
     </header>
+  </nav>
 
 
   <!--- This is where the navigation bar coding ends --->
 
-  <!-- NOTE: GRID -->
+  <!-- NOTE: ABOUT GRID -->
   <div class="Aboutgrid">
    <div id="Portrait">
    </div>
@@ -137,10 +150,11 @@
    </div>
  </div>
 
+<!-- NOTE: SKILL GRID -->
+
   <div class="Skillgrid">
     <div id="Skill1">
        <p>UI/UX DESIGN</p>
-     </div>
     </div>
     <div id="Skill2">
        <p>BRANDING/LOGO DESIGN</p>
@@ -148,7 +162,6 @@
     <div id="Skill3">
        <p> ILLUSTRATION</p>
     </div>
-   </div>
     <div id="Skill4">
        <p>UI/UX DESIGN</p>
     </div>
@@ -160,6 +173,28 @@
 
   <!-- NOTE: this is the coding for your form -->
   <form>
+    <div id="firstnamecontainer">
+      <label for="firstnameinput">First Name:</label>
+      <input type="text" id="firstnameinput" name="firstname">
+    </div>
+    <div id="Lastnamecontainer">
+      <label for="firstnameinput">Last Name:</label>
+      <input type="text" id="Lastnameinput" name="Lastname">
+    </div>
+    <div id="Emailcontainer">
+      <label for="Emailinput">Email:</label>
+      <input type="text" id="Emailinput" name="Email">
+    </div>
+    <div id="Companycontainer">
+      <label for="Companyinput">Company:</label>
+      <input type="text" id="Companyinput" name="Company">
+    </div>
+    <div id="Phonecontainer">
+      <label for="Phoneinput">Phone:</label>
+      <input type="text" id="Phoneinput" name="Phone">
+    </div>
+
+
 
 
   </form>
