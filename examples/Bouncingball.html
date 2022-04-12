@@ -4,8 +4,14 @@
     <meta charset="utf-8">
     <title>Bouncing Ball</title>
     <style>
+
+      body {
+        background-image: url("https://images.unsplash.com/photo-1612619279623-5b21c6125d12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+        background-size: cover;
+      }
+
       #fence {
-        border: 12px solid #eed9e2;
+        border: 5px solid white;
         height: 500px;
         position: relative;
         width: 600px;
@@ -14,12 +20,16 @@
       }
       #ball {
         background-color: lightpink;
-        height: 50px;
-        width: 50px;
-        border-radius: 30px;
+        height: 90px;
+        width: 90px;
+        border-radius: 200px;
         position: relative;
         background-image: url("https://media.giphy.com/media/l2ZDMqM6IZomTcnII/giphy.gif");
         background-position: center;
+
+      body {
+        background-color: #eed9e2;
+      }
       }
 
 
@@ -45,10 +55,16 @@
        ballX += ballXVelocity;
        ballY += ballYVelocity;
 
-       if (ballX > 600) {
+       if (ballX + 90 > 600 || ballX < 0) {
          // NOTE: ballXVelocity = ballXVelocity * -1;
          ballXVelocity *= -1;
        }
+       if (ballY + 90 > 500 || ballY < 0) {
+         ballYVelocity *= -1;
+       }
+
+       // NOTE: || OR OPERATOR// && IS THE AND OPERATOR
+
      }
 
      setInterval(moveBall, 10);
