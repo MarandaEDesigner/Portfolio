@@ -1,0 +1,57 @@
+.<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Bouncing Ball</title>
+    <style>
+      #fence {
+        border: 12px solid #eed9e2;
+        height: 500px;
+        position: relative;
+        width: 600px;
+        background-image: url("https://media.giphy.com/media/FpqDH5FL9Yo8w/giphy.gif");
+        background-size: cover;
+      }
+      #ball {
+        background-color: lightpink;
+        height: 50px;
+        width: 50px;
+        border-radius: 30px;
+        position: relative;
+        background-image: url("https://media.giphy.com/media/l2ZDMqM6IZomTcnII/giphy.gif");
+        background-position: center;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div id="fence">
+      <div id="ball"></div>
+    </div>
+   <script type="text/javascript">
+     let ball = document.getElementById('ball');
+
+     let ballX = 0;
+     let ballY = 0;
+     let ballXVelocity = 2;
+     let ballYVelocity = 2;
+
+     function moveBall() {
+       ball.style.left = ballX + 'px';
+       ball.style.top = ballY + 'px';
+
+   // NOTE: same as ballx = ballx + ballxvelocity
+       ballX += ballXVelocity;
+       ballY += ballYVelocity;
+
+       if (ballX > 600) {
+         // NOTE: ballXVelocity = ballXVelocity * -1;
+         ballXVelocity *= -1;
+       }
+     }
+
+     setInterval(moveBall, 10);
+   </script>
+  </body>
+</html>
