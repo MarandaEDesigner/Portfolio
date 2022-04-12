@@ -13,19 +13,27 @@
 
     #Containerinfo {
       background-color: #02171C;
-      height: 600px;
+      height: 500px;
       border-radius: 30% 40% 60%;
       border: #02171C;
-      width: 600px;
+      width: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
     }
 
     #Portrait {
-      background-image: url("../portfolio/");
+      background-image: url("../portfolio/Portrait.jpg");
       background-color: #02171C;
-      height: 600px;
+      height: 500px;
       border-radius: 50%;
       border: #02171C;
-      width: 500px;
+      width: 400px;
+      margin-left:  150px;
+      background-position: center;
+      background-size: contain;
+
     }
 
     /* NOTE: SKILL GRID CODING */
@@ -76,6 +84,13 @@
       text-align: center;
     }
 
+    h1 {
+      color: white;
+      font-size: 40px;
+      text-align: center;
+      padding-bottom: 380px;
+    }
+
 
 
 
@@ -84,6 +99,7 @@
 
     /* NOTE: GRID */
     .Skillgrid {
+      margin-left: 60px;
       display: grid;
       height: 100%;
       grid-template-rows: 260px;
@@ -99,10 +115,11 @@
       height: 100%;
       grid-template-rows: 3fr;
       grid-template-columns: 1fr 1fr;
-      grid-gap: 20px 10px;
       grid-template-areas:
       "Portrait"
     }
+
+    /* NOTE: CSS FOR FORM/BUTTON */
 
 
 /* NOTE: THIS IS UR RESPONSIVE */
@@ -147,6 +164,10 @@
    <div id="Portrait">
    </div>
    <div id="Containerinfo">
+     <h1 class="about">ABOUT ME</h1>
+     <h2>Hello! My name is Maranda Edwards</h2>
+     <h3>and I recently graduated from FIRST Institute.</h3>
+      <h4>I earned my diploma in Graphic design and web development<h4>
    </div>
  </div>
 
@@ -163,7 +184,7 @@
        <p> ILLUSTRATION</p>
     </div>
     <div id="Skill4">
-       <p>UI/UX DESIGN</p>
+       <p>MOTION GRAPHICS</p>
     </div>
    </div>
   </div>
@@ -192,6 +213,12 @@
     <div id="Phonecontainer">
       <label for="Phoneinput">Phone:</label>
       <input type="text" id="Phoneinput" name="Phone">
+    </div>
+
+    <!-- NOTE: BUTTON -->
+
+    <div id="button">
+      <input type="button" value= "SUBMIT">
     </div>
 
 
