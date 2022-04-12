@@ -11,17 +11,24 @@
     <title>MY ABOUT PAGE</title>
     <style>
 
-    #Portrait {
-      background-image: url("../portfolio/");
-      grid-area: sidenav;
-    }
-
     #Containerinfo {
       background-color: #02171C;
-      height: 370px;
-      border-radius: 0px;
+      height: 600px;
+      border-radius: 50%;
       border: #02171C;
+      width: 500px;
     }
+
+    #Portrait {
+      background-image: url("../portfolio/");
+      background-color: #02171C;
+      height: 600px;
+      border-radius: 50%;
+      border: #02171C;
+      width: 500px;
+    }
+
+    /* NOTE: SKILL GRID CODING */
 
     #Skill1 {
       background-color: #02171C;
@@ -30,22 +37,30 @@
       height: 230px;
     }
     #Skill2 {
+      grid-area: Skill2;
       background-color: #02171C;
       border-radius: 50%;
       width: 230px;
       height: 230px;
     }
     #Skill3 {
+      grid-area: Skill3;
       background-color: #02171C;
       border-radius: 50%;
       width: 230px;
       height: 230px;
     }
     #Skill4 {
+      grid-area: Skill4;
       background-color: #02171C;
       border-radius: 50%;
       width: 230px;
       height: 230px;
+    }
+
+    p {
+      color: white;
+      font-size: 24px;
     }
 
 
@@ -58,21 +73,23 @@
     .Skillgrid {
       display: grid;
       height: 100%;
-      grid-template-rows: 3fr;
-      grid-template-columns: 1fr;
-      grid-gap: 20px 10px;
+      grid-template-rows: 260px;
+      grid-template-columns: repeat(3, 1fr)
+      padding-top: 20px;
+      grid-gap: 10px;
       grid-template-areas:
-      ""
+      "Skill1 Skill2 Skill3 Skill4"
     }
 
     .Aboutgrid {
+      padding-top:  50px;
       display: grid;
       height: 100%;
       grid-template-rows: 3fr;
-      grid-template-columns: 1fr;
+      grid-template-columns: 2fr;
       grid-gap: 20px 10px;
       grid-template-areas:
-      ""
+      "Portrait"
     }
 
 
@@ -121,13 +138,20 @@
  </div>
 
   <div class="Skillgrid">
-   <div id="Skill1">
+    <div id="Skill1">
+       <p>UI/UX DESIGN</p>
+     </div>
+    </div>
+    <div id="Skill2">
+       <p>BRANDING/LOGO DESIGN</p>
+    </div>
+    <div id="Skill3">
+       <p> ILLUSTRATION</p>
+    </div>
    </div>
-   <div id="Skill2">
-   </div>
-   <div id="Skill3">
-   </div>
-   <div id="Skill4">
+    <div id="Skill4">
+       <p>UI/UX DESIGN</p>
+    </div>
    </div>
   </div>
 
