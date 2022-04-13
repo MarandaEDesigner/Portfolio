@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <style>
+
+      body {
+        background-image: url("https://media.giphy.com/media/CNUb51EbTxuRG/giphy.gif");
+        background-size: cover;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      #popupContainer {
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #popupContainer.popupOpen {
+        display: flex;
+      }
+
+      #popupbackground {
+        background-color: rgba(236, 219, 240, 0.5);
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+        position: absolute;
+      }
+
+      #popup {
+        position: relative;
+        z-index: 1;
+        border: 3px solid white;
+        padding: 36px;
+        background-image: url("https://media.giphy.com/media/UYzNgRSTf9X1e/giphy.gif");
+        background-position: center;
+        background-size: cover;
+        min-width: 400px;
+        text-align: center;
+      }
+
+      #popup .closepopup {
+        margin-top: 36px;
+      }
+
+      .congrat, .closepopup {
+        color: black;
+      }
+
+      .popupTrigger {
+        color: white;
+      }
+
+      h1 {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>ICECREAM!</h1>
+
+    <div class="popupTrigger">Click to see Icecream!</div>
+
+    <div id="popupContainer">
+      <div id="popupbackground" class="closepopup"></div>
+      <div id="popup">
+        <div class="congrat">SIKE! There's no Icecream!</div>
+        <div class="closepopup">Close</div>
+      </div>
+    </div>
+
+    <script>
+      $('.popupTrigger').click(
+       function() {
+         $('#popupContainer').addClass('popupOpen');
+       }
+      );
+
+      $('.closepopup').click(
+      function() {
+        $('#popupContainer').removeClass('popupOpen');
+      }
+      )
+
+
+
+
+    </script>
+  </body>
+</html>

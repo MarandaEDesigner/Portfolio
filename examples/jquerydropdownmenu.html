@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>DROPDOWN</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      nav,
+      .navlink {
+        background-color: black;
+      }
+      nav {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .navlink {
+        color: white;
+        flex: 1;
+        position: relative;
+      }
+      .mainlink {
+        background-color: black;
+      }
+      .mainlink:hover {
+        background-color: grey;
+      }
+      .mainlink,
+      .dropdown {
+        padding: 12px;
+      }
+      .dropdown {
+        background-color: grey;
+        position: absolute;
+        width: 100%;
+        display: none;
+      }
+      .dropdown div {
+        margin-bottom: 12px;
+      }
+      .navlink.dropdownOpen .dropdown {
+        display: block;
+      }
+
+
+
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="navlink">
+        <div class="mainlink">Home</div>
+      </div>
+      <div class="navlink hoverdropdown">
+        <div class="mainlink">Portfolio</div>
+        <div class="dropdown">
+         <div>Portrait</div>
+         <div>modeling</div>
+         <div>landscape</div>
+         <div>events</div>
+        </div>
+      </div>
+      <div class="navlink">
+        <div class="mainlink">other</div>
+      </div>
+      <div class="navlink hoverdropdown">
+        <div class="mainlink">Portfolio2</div>
+        <div class="dropdown">
+         <div>Portrait</div>
+         <div>modeling</div>
+         <div>landscape</div>
+         <div>events</div>
+        </div>
+      </div>
+      <div class="navlink clickdropdown">
+        <div class="mainlink">Projects</div>
+        <div class="dropdown">
+         <div>Photoshop</div>
+         <div>Indesign</div>
+         <div>illustrator</div>
+         <div>Aftereffects</div>
+        </div>
+      </div>
+      <div class="navlink">
+        <div class="mainlink">other</div>
+      </div>
+    </nav>
+
+   <script type="text/javascript">
+     $('.hoverdropdown').hover(
+       function() {
+         $(this).addClass('dropdownOpen');
+       },
+       function() {
+         $(this).removeClass('dropdownOpen');
+       }
+     );
+
+     $('.clickdropdown').click(
+      function() {
+       if ($(this).hasClass('dropdownOpen')) {
+         $(this).removeClass('dropdownOpen');
+       }
+       else {
+         $(this).addClass('dropdownOpen');
+       }
+      }
+     );
+
+   </script>
+  </body>
+</html>
