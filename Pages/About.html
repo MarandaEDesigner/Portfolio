@@ -119,12 +119,96 @@
       "Portrait"
     }
 
-    /* NOTE: CSS FOR FORM/BUTTON */
+    /* NOTE: CSS FOR BUTTON */
+
+    #button input[type=submit] {
+      cursor: pointer;
+    }
+    #button input[type=submit]:active {
+      cursor: pointer;
+    }
+
+    #button {
+      padding-top: 36px;
+      display: flex;
+      justify-content: center;
+    }
+
+    #button input {
+      border: 0px;
+      border-radius: 30px;
+      padding: 20px;
+      background-color: #02171C;
+      cursor: pointer;
+    }
+
+    #submit {
+      color: white;
+      font-size: 16px;
+    }
+
+    /* NOTE: CSS FOR FORM */
+
+    #form {
+      background-color: #02171C;
+      padding-top: 10px;
+      height: 170px;
+    }
+
+    #firstnamecontainer {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 10px;
+      color: white;
+    }
+    #Lastnamecontainer {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 10px;
+      color: white;
+    }
+    #Emailcontainer {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 10px;
+      color: white;
+    }
+    #Companycontainer {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 10px;
+      color: white;
+    }
+    #Phonecontainer {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 10px;
+      color: white;
+    }
+
+    #firstnamecontainer label, #lastnamecontainer label,
+    #Phonecontainer label, #Companycontainer label, #Emailcontainer label {
+      display: block;
+    }
+
+    .contact {
+      border: 0px;
+      padding: 20px;
+      background-color: #02171C;
+    }
+
+
+
+
+
+
 
 
 /* NOTE: THIS IS UR RESPONSIVE */
 
 @media screen and (max-width: 687px) {
+
+
 
 }
 
@@ -165,9 +249,10 @@
    </div>
    <div id="Containerinfo">
      <h1 class="about">ABOUT ME</h1>
-     <h2>Hello! My name is Maranda Edwards</h2>
-     <h3>and I recently graduated from FIRST Institute.</h3>
-      <h4>I earned my diploma in Graphic design and web development<h4>
+     <p>Hello! My name is Maranda Edwards.</p>
+     <p>I recently graduated from FIRST Institute and</p>
+      <p>earned my diploma in Graphic design and web development.<p>
+      <p>Within graduating from FIRST, I gained the skills listed below.</p>
    </div>
  </div>
 
@@ -191,34 +276,36 @@
 
 
 
-
+  <div class="contact">
+    <p>Get in touch with me!</p>
+  </div>
   <!-- NOTE: this is the coding for your form -->
-  <form>
+  <form id="form">
     <div id="firstnamecontainer">
-      <label for="firstnameinput">First Name:</label>
+      <label for="firstnameinput">First Name</label>
       <input type="text" id="firstnameinput" name="firstname">
     </div>
     <div id="Lastnamecontainer">
-      <label for="firstnameinput">Last Name:</label>
+      <label for="firstnameinput">Last Name</label>
       <input type="text" id="Lastnameinput" name="Lastname">
     </div>
     <div id="Emailcontainer">
-      <label for="Emailinput">Email:</label>
+      <label for="Emailinput">Email</label>
       <input type="text" id="Emailinput" name="Email">
     </div>
     <div id="Companycontainer">
-      <label for="Companyinput">Company:</label>
+      <label for="Companyinput">Company</label>
       <input type="text" id="Companyinput" name="Company">
     </div>
     <div id="Phonecontainer">
-      <label for="Phoneinput">Phone:</label>
+      <label for="Phoneinput">Phone</label>
       <input type="text" id="Phoneinput" name="Phone">
     </div>
 
     <!-- NOTE: BUTTON -->
 
     <div id="button">
-      <input type="button" value= "SUBMIT">
+      <input id="submit" type="button" value= "SUBMIT">
     </div>
 
 
