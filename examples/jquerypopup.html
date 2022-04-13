@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>popup</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <style>
+
+
+      * {
+        box-sizing: border-box;
+      }
+
+      #popupContainer {
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #popupContainer.popupOpen {
+        display: flex;
+      }
+
+ /*NOTE: rgba(255, 0, 0, 0.5); */
+      #popupbackground {
+        background-image: url("https://media.giphy.com/media/zwPRprvrP4Lm0/giphy.gif");
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+        position: absolute;
+      }
+
+      #popup {
+        position: relative;
+        z-index: 1;
+        border: 3px solid black;
+        padding: 36px;
+        background-color: black;
+        min-width: 400px;
+        text-align: center;
+      }
+
+      #popup .closepopup {
+        margin-top: 36px;
+      }
+
+      .congrat, .closepopup {
+        color: white;
+      }
+
+
+
+    </style>
+  </head>
+  <body>
+    <h1>SHUTUP EREN YEAGAR!</h1>
+
+    <div class="popupTrigger">Click to see Eren's response!</div>
+
+    <div id="popupContainer">
+      <div id="popupbackground"></div>
+      <div id="popup">
+       <div class="congrat">CONGRATULATIONS! You turned Eren Yeagar into a Titan!</div>
+       <div class="closepopup">Close</div>
+     </div>
+    </div>
+
+
+  <script type="text/javascript">
+    $('.popupTrigger').click(
+      function() {
+       $('#popupContainer').addClass('popupOpen');
+     }
+   );
+
+   $('.closepopup').click(
+   function() {
+     $('#popupContainer').removeClass('popupOpen');
+   }
+   );
+  </script>
+  </body>
+</html>
