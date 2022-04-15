@@ -11,14 +11,14 @@ img {
   vertical-align: middle;
 }
 
-.slideshow-container, .slideshow-container2 {
+.slideshow-container {
   max-width: 1000px;
   position: relative;
   margin: auto;
   margin-bottom: 20px;
 }
 
-.prev, .next, .prev2, .next2 {
+.prev, .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -33,12 +33,12 @@ img {
   user-select: none;
 }
 
-.next, .next2 {
+.next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-.prev:hover, .next:hover, .prev2:hover, .next2:hover {
+.prev:hover, .next:hover {
   background-color: rgba(2, 23, 16,0.8);
 }
 
@@ -47,9 +47,24 @@ img {
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
-  bottom: 8px;
+  bottom: 48px;
   width: 100%;
   text-align: center;
+}
+.text2 {
+  color: #021710;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 48px;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+}
+
+
+.dotContainer {
+  margin-top: 12px;
 }
 
 .numbertext {
@@ -59,6 +74,14 @@ img {
   position: absolute;
   top: 0;
 }
+.numbertext2 {
+  color: #021710;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
 
 .dot {
   border-style: solid;

@@ -1,5 +1,5 @@
 // creating an Array (aka list) of slideshow classes
-let slideshowClasses = ['slideshow1', 'slideshow2'];
+let slideshowClasses = ['slideshow1', 'slideshow2', 'slideshow3', 'slideshow4', 'slideshow5',];
 
 // creating an Object to store each slideshow's current slide index
 let slideshowIndexes = {};
@@ -24,7 +24,7 @@ function plusSlides(slideshowClass, slideIndexIncrement) {
 // takes two input parameters:
 //  slideshowClass, which is the class of the slideshow we want to update
 //  indexToSet, which is the new index we want to set the current index to
-function currentSlide(slideshowClass, indextoSet) {
+function currentSlide(slideshowClass, indexToSet) {
   slideshowIndexes[slideshowClass] = indexToSet;
   showSlides(slideshowClass, slideshowIndexes[slideshowClass]);
 }
@@ -34,7 +34,6 @@ function currentSlide(slideshowClass, indextoSet) {
 
 function showSlides(slideshowClass, indexToDisplay) {
   let i;
-  debugger;
   // create the selectors for the slides and dots
   // e.g. ".slideshow1 .mySlides"
   let slidesSelector = "." + slideshowClass + " .mySlides";
@@ -47,7 +46,7 @@ function showSlides(slideshowClass, indexToDisplay) {
 
   // get the index for the input slideshowClass
   // from our slideshowIndexes object
-  let slideIndex = slideshowIndexes[slideshowClass];
+  let slideIndex = indexToDisplay;
   // the following if statements adjust the index if it goes past the
   // beginning or end of the images
   if (indexToDisplay > slides.length) {
@@ -56,6 +55,9 @@ function showSlides(slideshowClass, indexToDisplay) {
   if (indexToDisplay < 1) {
     slideIndex = slides.length;
   }
+
+  slideshowIndexes[slideshowClass] = slideIndex;
+
   // sets all slides' display to 'none'
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
