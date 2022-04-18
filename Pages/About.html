@@ -30,7 +30,6 @@
       border-radius: 50%;
       border: #02171C;
       width: 500px;
-      margin-left:  260px;
       background-position: center;
       background-size: contain;
       margin-top: 50px;
@@ -79,6 +78,11 @@
       align-items: center;
     }
 
+    .emptyspace {
+      width: 100px;
+    }
+
+
     p {
       color: white;
       font-size: 24px;
@@ -99,7 +103,6 @@
 
     /* NOTE: GRID */
     .Skillgrid {
-      margin-left: 270px;
       display: grid;
       height: 100%;
       width: 70%;
@@ -107,7 +110,7 @@
       grid-template-columns: repeat(3, 1fr)
       padding-top: 20px;
       grid-template-areas:
-      "Skill1 Skill2 Skill3 Skill4"
+      "emptyspace Skill1 Skill2 Skill3 Skill4 emptyspace"
     }
 
     .Aboutgrid {
@@ -115,9 +118,9 @@
       display: grid;
       height: 100%;
       grid-template-rows: 3fr;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
       grid-template-areas:
-      "Portrait"
+      "emptyspace Portrait emptyspace"
     }
 
     /* NOTE: CSS FOR BUTTON */
@@ -259,7 +262,11 @@
   <!--- This is where the navigation bar coding ends --->
 
   <!-- NOTE: ABOUT GRID -->
+
+
   <div class="Aboutgrid">
+    <div class="emptyspace">
+    </div>
    <div id="Portrait">
    </div>
    <div id="Containerinfo">
@@ -269,11 +276,15 @@
       <p>earned my diploma in Graphic design and web development.<p>
       <p>Within graduating from FIRST, I gained the skills listed below.</p>
    </div>
+   <div class="emptyspace">
+   </div>
  </div>
 
 <!-- NOTE: SKILL GRID -->
 
   <div class="Skillgrid">
+    <div class="emptyspace">
+    </div>
     <div id="Skill1">
        <p>UI/UX DESIGN</p>
     </div>
@@ -286,7 +297,8 @@
     <div id="Skill4">
        <p>MOTION GRAPHICS</p>
     </div>
-   </div>
+    <div class="emptyspace">
+    </div>
   </div>
 
 
