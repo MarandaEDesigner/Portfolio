@@ -1,5 +1,5 @@
 // creating an Array (aka list) of slideshow classes
-let slideshowClasses = ['slideshow1', 'slideshow2', 'slideshow3', 'slideshow4', 'slideshow5',];
+let slideshowClasses = ['slideshow1', 'slideshow2', 'slideshow3', 'slideshow4', 'slideshow5', 'slideshow6', ];
 
 // creating an Object to store each slideshow's current slide index
 let slideshowIndexes = {};
