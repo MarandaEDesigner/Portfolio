@@ -27,12 +27,43 @@
         border: white;
         padding: 40px;
 
-
     }
 
-    h5 {
-      float: right;
+    .text {
+      font-size: 15px;
     }
+    /* NOTE: CSS FOR BUTTON */
+    #button input[type=submit]  {
+      cursor: pointer;
+    }
+
+    #button input[type=submit]:active {
+      cursor: pointer;
+    }
+
+    #button {
+      padding-top: 20px;
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    #button input {
+      border: 0px;
+      border-radius: 30px;
+      padding: 20px;
+      background-color: #02171C;
+      cursor: pointer;
+    }
+
+    #submit {
+      color: white;
+      font-size: 15px;
+    }
+
+
+
+
+
 
 /* NOTE: THIS IS UR RESPONSIVE */
 
@@ -40,14 +71,13 @@
   .container2 {
       margin: 20px;
   }
-
-  h5 {
-
-  }
-
   .text {
-    
+    font-size: 10px;
   }
+
+
+
+
 
 
 
@@ -87,7 +117,8 @@
 
   <div class="container2">
     <div class="container3">
-      <h5 class="text">Lorem ipsum dolor sit amet, consectetur adipiscing
+      <h1>POST TITLE</h1>
+      <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing
         elit, sed do eiusmod tempor incididunt ut
         labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi
@@ -96,8 +127,10 @@
         Excepteur sint occaecat cupidatat non proident,
         unt in culpa qui officia deserunt
         mollit anim id est laborum.
-      </h5>
-      <button id=""></button>
+      </p>
+      <div id="button">
+        <input id="submit" type="button" value="READ MORE">
+      </div>
     </div>
   </div>
 
